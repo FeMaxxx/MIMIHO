@@ -5,14 +5,25 @@ body {
   padding: 0;
 }
 
-img {
-  display: block;
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0px;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
 }
 
 h1,
@@ -21,12 +32,10 @@ h3,
 h4,
 h5,
 h6,
+li,
 p {
-  margin: 0;
-}
-
-[href] {
-  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .visually-hidden {
@@ -40,37 +49,4 @@ p {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-/* mobile screen */
-@media screen and (max-width: 1023.98px) {
-  .container {
-    width: 100%;
-    max-width: 414px;
-  }
-}
-
-/* tablet screen */
-@media screen and (min-width: 1024px) {
-  .container {
-    width: 1024px;
-    padding-right: 47px;
-    padding-left: 47px;
-  }
-}
-
-/* desktop screen */
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    padding-right: 85px;
-    padding-left: 85px;
-  }
 }
