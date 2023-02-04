@@ -1,16 +1,38 @@
-@import './vars';
-@import './base';
-@import './fonts';
-@import './common';
+//BACE
+@import "./bace/vars";
+@import "./bace/base";
+@import "./bace/fonts";
+@import "./bace/logo";
+@import "./bace/hero";
 
-@import './header';
-@import './main/hero';
-@import './main/about-our-rest';
-@import './main/details-rest';
-@import './main/about-our-hotel';
-@import './main/details-hotel';
-@import './main/contacts';
-@import './footer';
-@import './modal-window/price.scss';
-@import './modal-window/Reservation-number.scss';
-@import './modal-window/Reservation-table.scss';
+//MODAL WINDOWS
+@import "./modal-window/price.scss";
+@import "./modal-window/Reservation-number.scss";
+@import "./modal-window/Reservation-table.scss";
+
+//GENERAL SECTIONS
+@import "./general-sections/header";
+@import "./general-sections/footer";
+
+//INDEX
+@import "./index/index-hero";
+@import "./index/about-our-rest";
+@import "./index/details-rest";
+@import "./index/about-our-hotel";
+@import "./index/details-hotel";
+@import "./index/contacts";
+
+//RESTAURANT
+@import "./restaurant/restaurant-hero";
+@import "./restaurant/about-our-kitchen";
+@import "./restaurant/menu";
+
+//ROOM HOTEL
+@import "./room-hotel/room-hotel-hero";
+@import "./room-hotel/amenities";
+
+//HOTEL
+@import "./hotel/hotel-hero";
+@import "./hotel/1-room-luxe-2-adult";
+@import "./hotel/1-room-3-adult";
+@import "./hotel/1-room-2-adult";

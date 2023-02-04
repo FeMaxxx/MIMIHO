@@ -1,0 +1,20 @@
+.hero {
+  background: #605b5b;
+  padding-top: 64px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    position: relative;
+    padding-top: 188px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 164px;
+    padding-bottom: 64px;
+  }
+}
