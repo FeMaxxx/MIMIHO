@@ -1,0 +1,46 @@
+.locations {
+  display: flex;
+  align-items: center;
+
+  margin-left: auto;
+
+  width: 210px;
+  height: 47px;
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+.location-icon {
+  margin-left: 6px;
+  fill: var(--accent-color);
+}
+
+.location-text {
+  margin-left: 8px;
+
+  text-align: start;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: var(--location-text-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .locations {
+    position: absolute;
+    bottom: 65px;
+    width: 285px;
+    height: 56px;
+  }
+
+  .location-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .location-text {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}

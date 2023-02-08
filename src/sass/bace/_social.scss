@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  gap: 20px;
+  height: 24px;
+}
+
+.social-icon {
+  fill: rgba(243, 198, 83, 0.7);
+}
+
+// @media screen and (min-width: 1024px) {
+//   .social-icon {
+//     fill: var(--accent-color);
+//   }
+// }

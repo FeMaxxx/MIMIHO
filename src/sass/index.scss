@@ -4,7 +4,10 @@
 @import "./bace/base";
 @import "./bace/fonts";
 @import "./bace/logo";
-@import "./bace/hero";
+@import "./bace/location";
+@import "./bace/buttons";
+@import "./bace/social";
+@import "./bace/hiro-bg";
 
 //MODAL WINDOWS
 @import "./modal-window/price.scss";
@@ -13,10 +16,10 @@
 
 //GENERAL SECTIONS
 @import "./general-sections/header";
+@import "./general-sections/hero";
 @import "./general-sections/footer";
 
 //INDEX
-@import "./index/index-hero";
 @import "./index/about-our-rest";
 @import "./index/details-rest";
 @import "./index/about-our-hotel";
@@ -24,16 +27,17 @@
 @import "./index/contacts";
 
 //RESTAURANT
-@import "./restaurant/restaurant-hero";
 @import "./restaurant/about-our-kitchen";
 @import "./restaurant/menu";
 
-//ROOM HOTEL
-@import "./room-hotel/room-hotel-hero";
-@import "./room-hotel/amenities";
+//ROOM
+@import "./room/amenities";
+@import "./room/room-hero";
 
 //HOTEL
-@import "./hotel/hotel-hero";
 @import "./hotel/1-room-luxe-2-adult";
 @import "./hotel/1-room-3-adult";
 @import "./hotel/1-room-2-adult";
+
+//MODERN-NORMALIZE
+@import "~node_modules/modern-normalize/modern-normalize.css";

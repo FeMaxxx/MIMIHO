@@ -1,0 +1,87 @@
+.room-hero {
+  text-align: start;
+
+  .primary-buttons {
+    bottom: 60px;
+  }
+}
+
+.room-hero__location-info {
+  position: absolute;
+  width: 325px;
+  left: 15px;
+  bottom: 125px;
+}
+
+.room-hero__title {
+  margin-bottom: 14px;
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: var(--text-color-white);
+
+  .room-hero__title-word {
+    text-transform: lowercase;
+  }
+}
+
+.room-hero__text {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--text-color-white);
+}
+
+@media screen and (min-width: 1024px) {
+  .room-hero {
+    .locations {
+      bottom: 24px;
+    }
+
+    .primary-buttons {
+      bottom: 24px;
+    }
+
+    .social {
+      left: 370px;
+      bottom: 38px;
+    }
+  }
+
+  .room-hero__location-info {
+    width: 510px;
+    left: 47px;
+  }
+
+  .room-hero__title {
+    margin-bottom: 24px;
+
+    font-size: 36px;
+  }
+
+  .room-hero__text {
+    font-size: 16px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .room-hero {
+    .locations {
+      display: none;
+    }
+
+    .primary-buttons {
+      bottom: 48px;
+    }
+  }
+
+  .room-hero__location-info {
+    left: 85px;
+    bottom: 48px;
+  }
+}

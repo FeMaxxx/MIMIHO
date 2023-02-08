@@ -1,0 +1,63 @@
+.header-logo {
+  font-family: var(--logo-font);
+  font-size: 36px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+
+  text-transform: uppercase;
+  color: var(--text-color-white);
+}
+
+.hero-logo {
+  width: 303px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: var(--logo-font);
+  font-size: 96px;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+
+  text-transform: uppercase;
+  color: var(--text-color-white);
+}
+
+.section-logo {
+  font-family: var(--logo-font);
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+
+  text-transform: uppercase;
+  color: var(--primary-logo-color);
+}
+
+.footer-logo {
+  font-family: var(--logo-font);
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .header-logo {
+    font-size: 40px;
+  }
+
+  .hero-logo {
+    width: 404px;
+    font-size: 128px;
+    line-height: 1.08;
+  }
+
+  .section-logo {
+    font-size: 64px;
+  }
+
+  .footer-logo {
+    font-size: 64px;
+  }
+}

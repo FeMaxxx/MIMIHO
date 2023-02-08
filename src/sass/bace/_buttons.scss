@@ -1,0 +1,54 @@
+.primary-buttons {
+  .primary-buttons__item:not(:last-child) {
+    margin-bottom: 16;
+  }
+}
+
+.primary-button {
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  width: 236px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  font-weight: 700;
+  color: var(--accent-color);
+
+  transition: background-color var(--animation), border-color var(--animation);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    background-color: #ffffff;
+  }
+}
+
+.secondary-buttons {
+  .secondary-buttons__item {
+    margin-bottom: 16;
+  }
+}
+
+.secondary-button {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  width: 236px;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+
+  font-weight: 700;
+  color: var(--accent-color);
+
+  transition: background-color var(--animation), border-color var(--animation);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    background-color: #ffffff;
+  }
+}

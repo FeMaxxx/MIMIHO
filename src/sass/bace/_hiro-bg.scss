@@ -1,0 +1,349 @@
+//----------MOBILE----------
+
+//INDEX
+
+.index-hero {
+  max-width: 414px;
+  height: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(/src/images/main/main_hero/main_hero_mob_414_1x.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023.98px),
+  screen and (min-resolution: 192dpi) and (max-width: 1023.98px),
+  screen and (min-resolution: 2dppx) and (max-width: 1023.98px) {
+  .index-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/main/main_hero/main_hero_mob_414_2x.jpg);
+  }
+}
+
+//RESTAURANT
+
+.restaurant-hero {
+  max-width: 414px;
+  height: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(/src/images/restaurant/rest_hero/rest_hero_mob_414_1x.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023.98px),
+  screen and (min-resolution: 192dpi) and (max-width: 1023.98px),
+  screen and (min-resolution: 2dppx) and (max-width: 1023.98px) {
+  .restaurant-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/restaurant/rest_hero/rest_hero_mob_414_2x.jpg);
+  }
+}
+
+//HOTEL
+
+.hotel-hero {
+  max-width: 414px;
+  height: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url(/src/images/hotel/hotel_hero/hotel_hero_mob_414_1x.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023.98px),
+  screen and (min-resolution: 192dpi) and (max-width: 1023.98px),
+  screen and (min-resolution: 2dppx) and (max-width: 1023.98px) {
+  .hotel-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hotel/hotel_hero/hotel_hero_mob_414_2x.jpg);
+  }
+}
+
+//ROOM
+
+.room-hero {
+  max-width: 414px;
+  height: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url(/src/images/room/room_hero/room_hero_mob_414_1x.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1023.98px),
+  screen and (min-resolution: 192dpi) and (max-width: 1023.98px),
+  screen and (min-resolution: 2dppx) and (max-width: 1023.98px) {
+  .room-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      ),
+      url(/src/images/room/room_hero/room_hero_mob_414_2x.jpg);
+  }
+}
+
+//----------TABLET----------
+
+//INDEX
+
+@media screen and (min-width: 1024px) {
+  .index-hero {
+    max-width: 1024px;
+    height: 720px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/main/main_hero/main_hero_tab_1024_1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+  screen and (min-resolution: 192dpi) and (min-width: 1024px),
+  screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .index-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/main/main_hero/main_hero_tab_1024_2x.jpg);
+  }
+}
+
+//RESTAURANT
+
+@media screen and (min-width: 1024px) {
+  .restaurant-hero {
+    max-width: 1024px;
+    height: 720px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/restaurant/rest_hero/rest_hero_tab_1024_1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+  screen and (min-resolution: 192dpi) and (min-width: 1024px),
+  screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .restaurant-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/restaurant/rest_hero/rest_hero_tab_1024_2x.jpg);
+  }
+}
+
+//HOTEL
+
+@media screen and (min-width: 1024px) {
+  .hotel-hero {
+    max-width: 1024px;
+    height: 720px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hotel/hotel_hero/hotel_hero_tab_1024_1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+  screen and (min-resolution: 192dpi) and (min-width: 1024px),
+  screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .hotel-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hotel/hotel_hero/hotel_hero_tab_1024_2x.jpg);
+  }
+}
+
+//ROOM
+
+@media screen and (min-width: 1024px) {
+  .room-hero {
+    max-width: 1024px;
+    height: 720px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      ),
+      url(/src/images/room/room_hero/room_hero_tab_1024_1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
+  screen and (min-resolution: 192dpi) and (min-width: 1024px),
+  screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+  .room-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      ),
+      url(/src/images/room/room_hero/room_hero_tab_1024_1x.jpg);
+  }
+}
+
+//----------DESCTOP----------
+
+//INDEX
+
+@media screen and (min-width: 1280px) {
+  .index-hero {
+    max-width: 1280px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/main/main_hero/main_hero_desk_1280_1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .index-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/main/main_hero/main_hero_desk_1280_2x.jpg);
+  }
+}
+
+//RESTAURANT
+
+@media screen and (min-width: 1280px) {
+  .restaurant-hero {
+    max-width: 1280px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/restaurant/rest_hero/rest_hero_desk_1280_1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .restaurant-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/restaurant/rest_hero/rest_hero_desk_1280_2x.jpg);
+  }
+}
+
+//HOTEL
+
+@media screen and (min-width: 1280px) {
+  .hotel-hero {
+    max-width: 1280px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hotel/hotel_hero/hotel_hero_desk_1280_1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .hotel-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(/src/images/hotel/hotel_hero/hotel_hero_desk_1280_2x.jpg);
+  }
+}
+
+//ROOM
+
+@media screen and (min-width: 1280px) {
+  .room-hero {
+    max-width: 1280px;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      ),
+      url(/src/images/room/room_hero/room_hero_desk_1280_1x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1280px),
+  screen and (min-resolution: 192dpi) and (min-width: 1280px),
+  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+  .room-hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+      ),
+      url(/src/images/room/room_hero/room_hero_desk_1280_2x.jpg);
+  }
+}

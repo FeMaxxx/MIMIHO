@@ -1,0 +1,120 @@
+//HOTEL
+
+.hotel-hero {
+  .hero-logo {
+    margin-bottom: 32px;
+  }
+}
+
+//GENERAL
+
+.hero {
+  padding-top: 64px;
+  text-align: center;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  .container {
+    height: 100%;
+    position: relative;
+  }
+
+  .primary-buttons {
+    bottom: 102px;
+    right: 50%;
+    transform: translate(50%);
+    position: absolute;
+  }
+
+  .social {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+  }
+}
+
+.hero-logo {
+  margin-top: 70px;
+  margin-bottom: 24px;
+}
+
+.hero-subtitle {
+  margin-bottom: 45px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--text-color-white);
+}
+
+.hero-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: var(--text-color-white);
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    position: relative;
+    padding-top: 188px;
+    padding-bottom: 0px;
+
+    .primary-buttons {
+      display: flex;
+      bottom: 64px;
+      right: 47px;
+      transform: translate(0%);
+      position: absolute;
+
+      .primary-buttons__item:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 40px;
+      }
+    }
+
+    .social {
+      bottom: 15px;
+    }
+  }
+
+  .hero-logo {
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    margin-bottom: 56px;
+    font-size: 20px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 164px;
+
+    .primary-buttons {
+      right: 85px;
+    }
+
+    .social {
+      display: none;
+    }
+  }
+
+  .hero-logo {
+    margin-bottom: 32px;
+  }
+
+  .hero-subtitle {
+    margin-bottom: 64px;
+  }
+}
