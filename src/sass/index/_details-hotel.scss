@@ -186,13 +186,13 @@
     margin-left: auto;
   }
 
-  .сhange-position-box {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: start;
-    align-items: flex-end;
-    overflow: hidden;
-  }
+  // .сhange-position-box {
+  //   display: flex;
+  //   flex-direction: row-reverse;
+  //   justify-content: start;
+  //   align-items: flex-end;
+  //   overflow: hidden;
+  // }
 
   .details-hotel__buttons-list {
     margin-bottom: 70px;
@@ -268,76 +268,76 @@
 
 //---------- SLIDER ------------
 
-.details-hotel__slider {
-  margin-right: 40px;
-  overflow: hidden;
+// .details-hotel__slider {
+//   margin-right: 40px;
+//   overflow: hidden;
 
-  .swiper-details-hotel {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    .swiper-slide-details-hotel {
-      height: 270px !important;
-      width: auto;
+//   .swiper-details-hotel {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+//     .swiper-slide-details-hotel {
+//       height: 270px !important;
+//       width: auto;
 
-      img {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
+//       img {
+//         width: 100%;
+//         height: 100%;
+//       }
+//     }
+//   }
 
-  .swiper-button-left.swiper-button-disabled,
-  .swiper-button-right.swiper-button-disabled {
-    opacity: 0.35;
-    cursor: auto;
-    pointer-events: none;
-  }
+//   .swiper-button-left.swiper-button-disabled,
+//   .swiper-button-right.swiper-button-disabled {
+//     opacity: 0.35;
+//     cursor: auto;
+//     pointer-events: none;
+//   }
 
-  .swiper-buttons {
-    padding: 0px;
-    margin-top: 16px;
-    margin-bottom: 32px;
+//   .swiper-buttons {
+//     padding: 0px;
+//     margin-top: 16px;
+//     margin-bottom: 32px;
 
-    cursor: pointer;
-    background: none;
-    border: none;
+//     cursor: pointer;
+//     background: none;
+//     border: none;
 
-    &:hover .details-hotel-icon,
-    &:focus .details-hotel-icon {
-      fill: var(--accent-color-theme-dark);
-    }
-  }
+//     &:hover .details-hotel-icon,
+//     &:focus .details-hotel-icon {
+//       fill: var(--accent-color-theme-dark);
+//     }
+//   }
 
-  .swiper-button-left {
-    margin-right: 33px;
-  }
+//   .swiper-button-left {
+//     margin-right: 33px;
+//   }
 
-  .details-hotel-icon {
-    background: none;
-    fill: #ffffff;
+//   .details-hotel-icon {
+//     background: none;
+//     fill: #ffffff;
 
-    transition: fill var(--animation);
-  }
-}
+//     transition: fill var(--animation);
+//   }
+// }
 
-@media screen and (min-width: 1024px) {
-  .details-hotel__slider {
-    margin-right: 32px;
-    margin-bottom: 0px;
-    margin-left: 36px;
+// @media screen and (min-width: 1024px) {
+//   .details-hotel__slider {
+//     margin-right: 32px;
+//     margin-bottom: 0px;
+//     margin-left: 36px;
 
-    .swiper-details-hotel {
-      .swiper-buttons {
-        margin-top: 32px;
-        margin-bottom: 0px;
-      }
-    }
-  }
-}
+//     .swiper-details-hotel {
+//       .swiper-buttons {
+//         margin-top: 32px;
+//         margin-bottom: 0px;
+//       }
+//     }
+//   }
+// }
 
-@media screen and (min-width: 1280px) {
-  .details-hotel__slider {
-    margin-left: 32px;
-  }
-}
+// @media screen and (min-width: 1280px) {
+//   .details-hotel__slider {
+//     margin-left: 32px;
+//   }
+// }

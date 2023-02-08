@@ -1,0 +1,17 @@
+.section-phrase {
+  margin-bottom: 10px;
+
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--section-phrase-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .section-phrase {
+    margin-bottom: 5px;
+
+    font-size: 32px;
+  }
+}

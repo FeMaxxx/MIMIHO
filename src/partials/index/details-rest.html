@@ -1,13 +1,15 @@
 <section class="details-rest">
   <div class="container">
-    <p class="logo">MIMIHO</p>
+    <p class="section-logo">mimiho</p>
+
     <h2 class="details-rest__title">Ресторан</h2>
+
     <p class="details-rest__text">
       Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
       Velit officia consequat duis enim velit mollit.
     </p>
 
-    <div class="сhange-position-box">
+    <div class="details-rest__сhange-position-box">
       <div class="details-rest__slider" data-slider="details-rest">
         <!-- Slider main container -->
         <div class="swiper-details-rest">
@@ -124,33 +126,30 @@
             </div>
           </div>
 
-          <!-- If we need navigation buttons -->
-          <button class="swiper-buttons swiper-button-left" type="button">
-            <svg class="details-rest-icon" width="30" height="30">
-              <use href="./images/icons.svg#icon-arrow-left"></use>
-            </svg>
-          </button>
-          <button class="swiper-buttons swiper-button-right" type="button">
-            <svg class="details-rest-icon" width="30" height="30">
-              <use href="./images/icons.svg#icon-arrow-right"></use>
-            </svg>
-          </button>
+          <div class="swiper-buttons__box">
+            <button class="swiper-buttons swiper-button-left" type="button">
+              <svg class="details-rest-icon" width="30" height="30">
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="swiper-buttons swiper-button-right" type="button">
+              <svg class="details-rest-icon" width="30" height="30">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
-      <ul class="details-rest__buttons-list">
-        <li class="point">
-          <button
-            class="details-rest__button"
-            type="button"
-            data-modal-open-table
-          >
+      <ul class="primary-buttons">
+        <li class="primary-buttons__item">
+          <button class="primary-button" type="button" data-modal-open-table>
             Забронювати столик
           </button>
         </li>
-        <li class="point">
+        <li class="primary-buttons__item">
           <a href="restaurant.html#menu">
-            <button class="details-rest__button" type="button">
+            <button class="primary-button" type="button">
               Переглянути меню
             </button>
           </a>
