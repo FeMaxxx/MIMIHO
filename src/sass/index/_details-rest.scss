@@ -6,6 +6,9 @@
   max-width: 414px;
   height: 735px;
 
+  box-shadow: (0px -4px 4px rgba(0, 0, 0, 0.25)),
+    (0px 4px 4px rgba(0, 0, 0, 0.25));
+
   .container {
     padding-top: 24px;
   }
@@ -75,7 +78,6 @@
   .details-rest {
     height: 620px;
     max-width: 1024px;
-    background-size: cover;
 
     .container {
       padding-top: 48px;
@@ -196,7 +198,7 @@
     }
   }
 
-  .swiper-buttons__box {
+  .details-rest__swiper-buttons-list {
     position: absolute;
     left: 25px;
     top: 286px;
@@ -237,7 +239,7 @@
     margin-bottom: 0px;
     margin-left: 29px;
 
-    .swiper-buttons__box {
+    .details-rest__swiper-buttons-list {
       left: 265px;
     }
   }
@@ -247,7 +249,7 @@
   .details-rest__slider {
     margin-left: 32px;
 
-    .swiper-buttons__box {
+    .details-rest__swiper-buttons-list {
       left: 269px;
     }
   }

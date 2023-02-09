@@ -27,6 +27,9 @@
   position: absolute;
   left: 15px;
   top: 210px;
+
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 
 .about-hotel__position-box {
@@ -37,6 +40,11 @@
   display: flex;
   column-gap: 20px;
   align-items: center;
+}
+
+.about-hotel__second-img {
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 
 .about-hotel__second-img-text {
