@@ -173,14 +173,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    .swiper-slide-details-hotel {
-      height: 270px !important;
-      width: auto;
+  }
 
-      img {
-        width: 100%;
-        height: 100%;
-      }
+  .swiper-slide-details-hotel {
+    height: 270px !important;
+    width: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -195,7 +196,6 @@
     padding: 0px;
     margin-top: 16px;
 
-    cursor: pointer;
     background: none;
     border: none;
 
