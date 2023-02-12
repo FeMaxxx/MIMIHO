@@ -1,0 +1,112 @@
+.hotel__double-room {
+  .container {
+    padding-top: 32px;
+    height: 1050px;
+    position: relative;
+  }
+
+  .section-logo {
+    margin-bottom: 32px;
+  }
+
+  .secondary-buttons {
+    position: absolute;
+    bottom: 32px;
+    right: 89;
+  }
+}
+
+.hotel-title {
+  margin-bottom: 12px;
+
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  .hotel-title__item {
+    text-transform: lowercase;
+  }
+}
+
+.hotel-text {
+  width: 245px;
+  font-size: 12px;
+  color: var(--secondary-text-color);
+}
+
+.hotel-img {
+  position: absolute;
+
+  top: 286px;
+  right: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel__double-room {
+    .container {
+      padding-top: 64px;
+      height: 838px;
+    }
+
+    .section-logo {
+      margin-bottom: 62px;
+    }
+
+    .secondary-buttons {
+      bottom: 145px;
+      right: 47px;
+    }
+  }
+
+  .hotel-title {
+    margin-bottom: 16px;
+
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
+  .hotel-text {
+    width: 415px;
+    font-size: 16px;
+  }
+
+  .hotel-img {
+    top: -32px;
+    right: 112px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hotel__double-room {
+    .container {
+      padding-top: 72px;
+      height: 956px;
+    }
+
+    .section-logo {
+      margin-bottom: 72px;
+    }
+
+    .secondary-buttons {
+      bottom: 182px;
+      right: 85px;
+    }
+  }
+
+  .hotel-title {
+    margin-bottom: 24px;
+
+    font-size: 36px;
+  }
+
+  .hotel-text {
+    width: 387px;
+  }
+
+  .hotel-img {
+    right: 180px;
+  }
+}

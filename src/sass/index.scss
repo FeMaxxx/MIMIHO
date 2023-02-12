@@ -11,9 +11,9 @@
 @import "./bace/section-phrase";
 
 //MODAL WINDOWS
-@import "./modal-window/price.scss";
-@import "./modal-window/Reservation-number.scss";
-@import "./modal-window/Reservation-table.scss";
+@import "./modal-window/price";
+@import "./modal-window/Reservation-number";
+@import "./modal-window/Reservation-table";
 
 //GENERAL SECTIONS
 @import "./general-sections/header";
@@ -36,9 +36,8 @@
 @import "./room/room-hero";
 
 //HOTEL
-@import "./hotel/1-room-luxe-2-adult";
-@import "./hotel/1-room-3-adult";
-@import "./hotel/1-room-2-adult";
+@import "./hotel/hotel-double-room";
+@import "./hotel/hotel-triple-room";
 
 //MODERN-NORMALIZE
 @import "~node_modules/modern-normalize/modern-normalize.css";

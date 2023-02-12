@@ -1,0 +1,128 @@
+.hotel__triple-room {
+  background-color: var(--secondary-bg-color);
+  width: 414px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .container {
+    padding-left: 95px;
+    padding-top: 32px;
+    height: 1050px;
+    position: relative;
+  }
+
+  .section-phrase {
+    margin-left: auto;
+  }
+
+  .section-logo {
+    margin-left: auto;
+    margin-bottom: 32px;
+  }
+
+  .secondary-buttons {
+    position: absolute;
+    bottom: 32px;
+    left: 89;
+  }
+}
+
+.hotel__triple-room-title {
+  margin-bottom: 12px;
+  width: 303px;
+
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.hotel__triple-room-text {
+  width: 245px;
+  font-size: 12px;
+  color: var(--secondary-text-color);
+}
+
+.hotel__triple-room-img {
+  position: absolute;
+
+  top: 286px;
+  left: 15px;
+}
+
+@media screen and (min-width: 1024px) {
+  .hotel__triple-room {
+    width: 1024px;
+
+    .container {
+      padding-left: 587px;
+      padding-top: 64px;
+      height: 838px;
+    }
+
+    .section-logo {
+      margin-bottom: 62px;
+    }
+
+    .secondary-buttons {
+      bottom: 145px;
+      left: 47px;
+    }
+  }
+
+  .hotel__triple-room-title {
+    width: 380px;
+    margin-bottom: 16px;
+
+    font-size: 30px;
+    line-height: 1.13;
+  }
+
+  .hotel__triple-room-text {
+    width: 390px;
+    font-size: 16px;
+  }
+
+  .hotel__triple-room-img {
+    top: -32px;
+    left: 112px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hotel__triple-room {
+    width: 1280px;
+
+    .container {
+      padding-left: 740px;
+      padding-top: 72px;
+      height: 956px;
+    }
+
+    .section-logo {
+      margin-bottom: 72px;
+    }
+
+    .secondary-buttons {
+      bottom: 182px;
+      left: 85px;
+    }
+  }
+
+  .hotel__triple-room-title {
+    width: 455px;
+    margin-bottom: 24px;
+
+    font-size: 36px;
+  }
+
+  .hotel__triple-room-text {
+    width: 387px;
+  }
+
+  .hotel__triple-room-img {
+    left: 180px;
+  }
+}
