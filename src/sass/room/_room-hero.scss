@@ -1,5 +1,20 @@
 .room-hero {
   text-align: start;
+  position: relative;
+
+  .shadou {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 414px;
+    height: 150px;
+    background: linear-gradient(
+      180deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
 
   .primary-buttons {
     bottom: 60px;
@@ -38,6 +53,11 @@
 
 @media screen and (min-width: 1024px) {
   .room-hero {
+    .shadou {
+      width: 1024px;
+      height: 150px;
+    }
+
     .locations {
       bottom: 24px;
     }
@@ -71,6 +91,11 @@
 
 @media screen and (min-width: 1280px) {
   .room-hero {
+    .shadou {
+      width: 1280px;
+      height: 150px;
+    }
+
     .locations {
       display: none;
     }
