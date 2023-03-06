@@ -4,5 +4,3 @@ import "./JS/box-slider";
 import "./JS/modal-number";
 import "./JS/modal-price";
 import "./JS/modal-table";
-
-import "../node_modules/animate.css";
