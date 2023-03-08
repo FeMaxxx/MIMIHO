@@ -1,85 +1,92 @@
-<div class="backdrop is-hidden" data-modal-table>
-    <div class="restaurant-modal">
-        <button type="button" class="restaurant-modal-close-btn" data-modal-close-table>
-            <svg class="restaurant-modal-close-btn-icon">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-        </button>
-        <form class="form-reservation" name="reservation">
+<div class="table-modal__backdrop is-hidden" data-modal-table>
+  <div class="table-modal">
+    <button type="button" class="table-modal__close-btn" data-modal-close-table>
+      <svg class="table-modal__close-btn-icon">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
 
-            <strong id="" class="your-reservation">забронювати столик</strong>
-            <div class="restaurant-modal-group" role="group">
-                <div class="restaurant-modal-group-tabl">
-            <div class="form-reservation-item">
-            <input 
-                        class="form-reservation-input" 
-                        type="text" 
-                        minlength="2" 
-                        name="name" 
-                        id="user_name"
-                            
-                        placeholder="Ваше ім'я" 
-                        required  
-                        size="45"
-                        pattern="[a-z]{2,8}"
-                        title="2 to 8 lowercase letters" />
-                        <label class="form-reservation-field" for="user_name">
-                            На кого забронювати столик?
-                        </label>
-                        </div>
+    <h2 class="table-modal__title">забронювати столик</h2>
 
-                        
-                        <div class="form-reservation-item">
-                            <input class="form-reservation-input" type="tel" name="tel" id="user_phone" required
-                            placeholder="+38 (___) ___-__-__"
-                            title="+380**-***-**-**" />
-                                <label class="form-reservation-field" for="user_phone">
-                                    Номер телефону
-                                </label>
-                        </div>
-                        </div>
-                   <div class="form-reservation-table">
-            <div class="form-reservation-item form-reservation-position">
-                    <select id="individuals" name="individuals" class="form-reservation-input" id="user_order">
-                        <option class="option-item" value="1">1</option>
-                        <option class="option-item" value="2" selected>2</option>
-                        <option class="option-item" value="3">3</option>
-                        <option class="option-item" value="4">4</option>
-                        <option class="option-item" value="5">5</option>
-                        <option class="option-item" value="6">6</option>
-                        <option class="option-item" value="7">7</option>
-                        <option class="option-item" value="8">8</option>
-                        <option class="option-item" value="9">9</option>
-                    </select>
+    <form class="table-modal__form" name="reservation">
+      <div class="table-modal__form-item">
+        <label class="table-modal__form-field">
+          На кого забронювати столик?
+        </label>
 
-                        <svg class="form-reservation-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-arrow-down"></use>
-                        </svg>
-                        <label class="form-reservation-field" for="individuals">
-                            Столик на яку кількість осіб?
-                        </label>
-</div>
+        <input
+          name="name"
+          class="room-modal__form-input"
+          type="text"
+          pattern="^[a-zA-Zа-яА-ЯїЇ]+\s[a-zA-Zа-яА-ЯїЇ]+$"
+          title="прізвище та Ім'я"
+          placeholder="Прізвище Ім'я"
+          required
+          minlength="2"
+        />
+      </div>
 
-                   
-                
-                <div class="form-reservation-item form-reservation-position">
-                    <select id="data-order" name="data-order" class="form-reservation-input style-margin">
-                        <option value="Сьогодні" selected>Сьогодні</option>
-                        <option value="Завтра">Завтра</option>
+      <div class="table-modal__form-item">
+        <label class="table-modal__form-field"> Номер телефону </label>
 
-                    </select>
-                    <svg class="form-reservation-icon" width="24" height="24">
-                        <use href="./images/icons.svg#icon-arrow-down"></use>
-                    </svg>
-                    <label class="form-reservation-field" for="data-order">
-                        На яку дату бронювати?
-                    </label>
-                    </div>
-                </div>
-                   
-               
-            </div>
-            <button type="submit" class="btn button-modal-menu">Оформити бронювання</button>
-    
+        <input
+          name="phone"
+          id="phone"
+          class="room-modal__form-input"
+          type="tel"
+          pattern="[0-9]{10}"
+          placeholder="066 666 66 66"
+          required
+        />
+      </div>
+
+      <div class="table-modal__form-item">
+        <label class="table-modal__form-field">
+          Столик на яку кількість осіб?
+        </label>
+
+        <div class="table-modal__position-icon-box">
+          <select
+            class="table-modal__form-input table-modal__form-input-option"
+            name="individuals"
+          >
+            <option class="option-item" value="1">1</option>
+            <option class="option-item" value="2" selected>2</option>
+            <option class="option-item" value="3">3</option>
+            <option class="option-item" value="4">4</option>
+            <option class="option-item" value="5">5</option>
+            <option class="option-item" value="6">6</option>
+            <option class="option-item" value="7">7</option>
+            <option class="option-item" value="8">8</option>
+            <option class="option-item" value="9">9</option>
+          </select>
+
+          <svg class="table-modal__form-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="table-modal__form-item">
+        <label class="table-modal__form-field"> На яку дату бронювати? </label>
+
+        <div class="table-modal__position-icon-box">
+          <input
+            data-user-rest
+            class="table-modal__form-input table-modal__form-input-option"
+            name="data-order"
+            placeholder="00.00.0000 00:00"
+          ></input>
+
+          <svg class="table-modal__form-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <button class="modal-window__buttons" type="submit">
+        Оформити бронювання
+      </button>
     </form>
+  </div>
 </div>

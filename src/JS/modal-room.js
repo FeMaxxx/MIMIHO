@@ -1,10 +1,11 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
+import { optionsRange } from "./date-picker";
 
 const openModalBtns = document.querySelectorAll("[data-modal-open-room]");
 const closeModalBtns = document.querySelectorAll("[data-modal-close-room]");
 const modalRoom = document.querySelector("[data-modal-room]");
-const userInDate = document.querySelector("[data-user-in-date]");
+const userInroom = document.querySelector("[data-user-room]");
 
 modalRoom.addEventListener("submit", submitForm);
 
@@ -50,59 +51,6 @@ function removeEventListeners() {
   document.removeEventListener("click", closeModalEscAndClickOutside);
 }
 
-const options = {
-  minuteIncrement: 1,
-  mode: "range",
-
-  dateFormat: "d.m.Y",
-  locale: {
-    rangeSeparator: " до ",
-    firstDayOfWeek: 1,
-    weekdays: {
-      shorthand: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
-      longhand: [
-        "Неділя",
-        "Понеділок",
-        "Вівторок",
-        "Середа",
-        "Четвер",
-        "П'ятниця",
-        "Субота",
-      ],
-    },
-    months: {
-      shorthand: [
-        "Січ",
-        "Лют",
-        "Бер",
-        "Квіт",
-        "Трав",
-        "Чер",
-        "Лип",
-        "Сер",
-        "Вер",
-        "Жов",
-        "Лис",
-        "Гру",
-      ],
-      longhand: [
-        "Січень",
-        "Лютий",
-        "Березень",
-        "Квітень",
-        "Травень",
-        "Червень",
-        "Липень",
-        "Серпень",
-        "Вересень",
-        "Жовтень",
-        "Листопад",
-        "Грудень",
-      ],
-    },
-  },
-};
-
-flatpickr(userInDate, options);
+flatpickr(userInroom, optionsRange);
 
 export { openRoomModal };
