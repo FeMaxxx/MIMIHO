@@ -8,7 +8,7 @@
   visibility: visible;
   opacity: 1;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity var(--animation), visibility var(--animation);
+  transition: opacity var(--modal-animation), visibility var(--modal-animation);
 
   &.is-hidden {
     visibility: hidden;
@@ -18,6 +18,7 @@
 }
 
 .price {
+  padding: 45px 15px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,6 +29,10 @@
   transform: translate(-50%, -50%);
   border: 1px solid var(--accent-color);
   border-radius: 2px;
+
+  .modal-window__buttons {
+    margin-top: 25px;
+  }
 }
 
 .price__btn-close {
@@ -46,19 +51,15 @@
 .price__icon-close {
   stroke: #000000;
   transition: stroke var(--animation);
-}
 
-.price__icon-close:hover,
-.price__icon-close:active {
-  stroke: var(--accent-color);
-}
-
-.price-form {
-  padding: 60px 15px;
+  &:hover,
+  &:focus {
+    stroke: var(--accent-color);
+  }
 }
 
 .price-form__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -71,7 +72,7 @@
 }
 
 .price-form__box {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .price-form__label {
@@ -80,12 +81,11 @@
   display: block;
   font-weight: 500;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.2;
   color: var(--accent-color);
 }
 
 .position-box {
-  margin-bottom: 25px;
   position: relative;
 }
 
@@ -95,12 +95,9 @@
   width: 100%;
   height: 54px;
   border: 1px solid var(--accent-color);
-  font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.05em;
   appearance: none;
-
-  transition: border var(--animation);
 
   &:hover + .price-form__input-icon,
   &:focus + .price-form__input-icon {

@@ -1,0 +1,54 @@
+<div class="price-backdrop is-hidden" data-modal-price>
+  <div class="price">
+    <button class="price__btn-close" type="button" data-modal-close-price>
+      <svg class="price__icon-close" width="24" height="24">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="price-form__title">Ціни на номер</h2>
+
+    <form class="price-form">
+      <div class="price-form__box">
+        <label class="price-form__label" for="nights">Категорія номеру</label>
+
+        <div class="position-box">
+          <select class="price-form__input" name="category">
+            <option name="1" selected="">Двомісний</option>
+            <option name="2">Двомісний люкс</option>
+            <option name="3">Трьохмісний</option>
+          </select>
+
+          <svg class="price-form__input-icon">
+            <use href="./images/icons.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="price-form__box">
+        <label class="price-form__label" for="nights">Кількість ночей</label>
+
+        <div class="position-box">
+          <select class="price-form__input" name="nights">
+            <option selected="">1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+
+          <svg class="price-form__input-icon">
+            <use href="./images/icons.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <p class="price-form__label">Ціна:</p>
+      <p class="price-form__price"></p>
+
+      <button class="modal-window__buttons" type="submit">
+        Забронювати номер
+      </button>
+    </form>
+  </div>
+</div>

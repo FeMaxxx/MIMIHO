@@ -1,4 +1,4 @@
-import { modalRoom } from "./modal-number";
+import { modalRoom } from "./modal-room";
 
 const openModalBtns = document.querySelectorAll("[data-modal-open-price]");
 const closeModalBtns = document.querySelectorAll("[data-modal-close-price]");
@@ -25,10 +25,16 @@ function openModal() {
 function openRoomModal(e) {
   e.preventDefault();
   modalPrice.classList.add("is-hidden");
-  modalRoom.classList.remove("is-hidden");
+  1;
+
+  setTimeout(removeHiddenModalRoom, 300);
 
   form.removeEventListener("input", changePrice);
   form.removeEventListener("submit", openRoomModal);
+}
+
+function removeHiddenModalRoom() {
+  modalRoom.classList.remove("is-hidden");
 }
 
 function closeModal() {

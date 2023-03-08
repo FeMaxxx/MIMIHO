@@ -1,0 +1,84 @@
+<div class="room-modal__backdrop is-hidden" data-modal-room>
+  <div class="room-modal">
+    <button class="room-modal__btn-close" type="button" data-modal-close-room>
+      <svg class="room-modal__btn-close-icon">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="room__modal-title">Забронювати номер</h2>
+
+    <form class="room-modal__form js-room-modal__form">
+      <div class="room-modal__form-box">
+        <label class="room-modal__form-label">На кого забронювати номер?</label>
+
+        <input
+          name="name"
+          class="room-modal__form-input"
+          type="text"
+          pattern="(^[a-zA-Zа-яА-Яй-Йї-Ї]+$)"
+          title="Ім'я"
+          placeholder="Ваше ім'я"
+          required=""
+        />
+      </div>
+
+      <div class="room-modal__form-box">
+        <label class="room-modal__form-label">Номер телефону</label>
+
+        <input
+          name="phone"
+          id="phone"
+          class="room-modal__form-input"
+          type="tel"
+          pattern="[0-9]{10}"
+          placeholder="+38 (___) ___-__-__"
+          required=""
+        />
+      </div>
+
+      <div class="room-modal__form-box">
+        <label class="room-modal__form-label">Категорія номеру</label>
+
+        <div class="icon-position-box">
+          <select
+            class="room-modal__form-input room-modal__form-select"
+            name="category-room"
+            id="category-room"
+          >
+            <option value="Двомісний люкс" selected="">Двомісний люкс</option>
+            <option value="Тримісний номер">Трьохмісний номер</option>
+            <option value="Двохмісний номер">Двомісний номер</option>
+          </select>
+
+          <svg class="room-modal__input-icon">
+            <use href="./images/icons.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="room-modal__form-box">
+        <label class="room-modal__form-label">Дата заїзду та виїзду</label>
+
+        <div class="icon-position-box">
+          <input
+            data-user-in-date
+            type="text"
+            name="user-in-date"
+            class="room-modal__form-input"
+            id="user-in-date"
+            placeholder=""
+          />
+
+          <svg class="room-modal__input-icon">
+            <use href="./images/icons.svg#icon-arrow-down"></use>
+          </svg>
+        </div>
+      </div>
+
+      <button class="modal-window__buttons" type="submit">
+        Оформити бронювання
+      </button>
+    </form>
+  </div>
+</div>

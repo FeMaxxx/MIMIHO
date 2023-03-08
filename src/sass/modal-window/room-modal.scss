@@ -1,0 +1,167 @@
+.room-modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(46, 47, 66, 0.4);
+
+  transition: opacity var(--modal-animation), visibility var(--modal-animation);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.room-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 414px;
+  width: 100%;
+  padding: 45px 15px;
+
+  background-color: var(--primary-bg-color);
+  border-radius: 2px;
+  border: 1px solid var(--accent-color);
+  border-radius: 2px;
+
+  .modal-window__buttons {
+    margin-top: 25px;
+  }
+}
+
+.room-modal__form {
+}
+
+.room-modal__btn-close {
+  position: absolute;
+  background-color: inherit;
+
+  top: 16px;
+  right: 16px;
+  padding: 0;
+}
+
+.room-modal__btn-close-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #000000;
+  transition: stroke var(--animation);
+
+  &:hover,
+  &:focus {
+    stroke: var(--accent-color);
+  }
+}
+
+.room__modal-title {
+  margin-bottom: 30px;
+
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.icon-position-box {
+  position: relative;
+}
+
+.room-modal__form-box:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.room-modal__form-input {
+  padding-left: 12px;
+  width: 100%;
+  height: 54px;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  cursor: text;
+
+  appearance: none;
+  border: 1px solid var(--accent-color);
+
+  &:hover + .room-modal__input-icon,
+  &:focus + .room-modal__input-icon {
+    top: 60%;
+  }
+}
+
+.room-modal__form-select {
+  cursor: pointer;
+}
+
+.room-modal__input-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  pointer-events: none;
+  fill: var(--accent-color);
+
+  transition: top var(--animation);
+}
+
+.room-modal__form-label {
+  display: block;
+  margin-bottom: 5px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--accent-color);
+}
+
+.room-modal__submit-btn:hover,
+.room-modal__submit-btn:active {
+  background-color: var(--accent-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .room {
+    width: 712px;
+    height: 638px;
+  }
+
+  .room-modal__form {
+    padding: 60px;
+  }
+
+  .room__modal-title {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .room-modal__form-input {
+    width: 288px;
+    height: 64px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .room-modal__form-label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .room-modal__submit-btn {
+    width: 592px;
+  }
+}
