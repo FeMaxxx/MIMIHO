@@ -1,4 +1,4 @@
-import { modalRoom } from "./modal-room";
+import { openRoomModal } from "./modal-room";
 
 const openModalBtns = document.querySelectorAll("[data-modal-open-price]");
 const closeModalBtns = document.querySelectorAll("[data-modal-close-price]");
@@ -19,27 +19,42 @@ closeModalBtns.forEach(element => {
 function openModal() {
   modalPrice.classList.remove("is-hidden");
   form.addEventListener("input", changePrice);
-  form.addEventListener("submit", openRoomModal);
-}
-
-function openRoomModal(e) {
-  e.preventDefault();
-  modalPrice.classList.add("is-hidden");
-  1;
-
-  setTimeout(removeHiddenModalRoom, 300);
-
-  form.removeEventListener("input", changePrice);
-  form.removeEventListener("submit", openRoomModal);
-}
-
-function removeHiddenModalRoom() {
-  modalRoom.classList.remove("is-hidden");
+  form.addEventListener("submit", roomModal);
+  document.addEventListener("keydown", closeModalEscAndClickOutside);
+  document.addEventListener("click", closeModalEscAndClickOutside);
 }
 
 function closeModal() {
   modalPrice.classList.add("is-hidden");
 
+  removeEventListeners();
+}
+
+function closeModalEscAndClickOutside(e) {
+  if (e.code === "Escape" || e.target.classList.contains("price-backdrop")) {
+    modalPrice.classList.add("is-hidden");
+
+    removeEventListeners();
+  }
+}
+
+function roomModal(e) {
+  e.preventDefault();
+
+  modalPrice.classList.add("is-hidden");
+
+  removeEventListeners();
+
+  setTimeout(removeHiddenModalRoom, 300);
+}
+
+function removeHiddenModalRoom() {
+  openRoomModal();
+}
+
+function removeEventListeners() {
+  document.removeEventListener("keydown", closeModalEscAndClickOutside);
+  document.removeEventListener("click", closeModalEscAndClickOutside);
   form.removeEventListener("input", changePrice);
   form.removeEventListener("submit", openRoomModal);
 }

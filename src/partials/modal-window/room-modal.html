@@ -16,10 +16,11 @@
           name="name"
           class="room-modal__form-input"
           type="text"
-          pattern="(^[a-zA-Zа-яА-Яй-Йї-Ї]+$)"
-          title="Ім'я"
-          placeholder="Ваше ім'я"
-          required=""
+          pattern="^[a-zA-Zа-яА-ЯїЇ]+\s[a-zA-Zа-яА-ЯїЇ]+$"
+          title="прізвище та Ім'я"
+          placeholder="Прізвище Ім'я"
+          required
+          minlength="2"
         />
       </div>
 
@@ -32,8 +33,8 @@
           class="room-modal__form-input"
           type="tel"
           pattern="[0-9]{10}"
-          placeholder="+38 (___) ___-__-__"
-          required=""
+          placeholder="066 666 66 66"
+          required
         />
       </div>
 
@@ -66,8 +67,7 @@
             type="text"
             name="user-in-date"
             class="room-modal__form-input"
-            id="user-in-date"
-            placeholder=""
+            placeholder="Від 00.00.0000 до 00.00.0000"
           />
 
           <svg class="room-modal__input-icon">

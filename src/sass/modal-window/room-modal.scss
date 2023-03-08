@@ -7,6 +7,7 @@
   opacity: 1;
   visibility: visible;
   background-color: rgba(46, 47, 66, 0.4);
+  z-index: 100;
 
   transition: opacity var(--modal-animation), visibility var(--modal-animation);
 
@@ -35,9 +36,6 @@
   .modal-window__buttons {
     margin-top: 25px;
   }
-}
-
-.room-modal__form {
 }
 
 .room-modal__btn-close {
@@ -132,36 +130,4 @@
 .room-modal__submit-btn:hover,
 .room-modal__submit-btn:active {
   background-color: var(--accent-color);
-}
-
-@media screen and (min-width: 1024px) {
-  .room {
-    width: 712px;
-    height: 638px;
-  }
-
-  .room-modal__form {
-    padding: 60px;
-  }
-
-  .room__modal-title {
-    font-size: 40px;
-    line-height: 1.15;
-  }
-
-  .room-modal__form-input {
-    width: 288px;
-    height: 64px;
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .room-modal__form-label {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  .room-modal__submit-btn {
-    width: 592px;
-  }
 }
