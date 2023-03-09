@@ -44,6 +44,14 @@
   right: 15px;
 }
 
+.hotel__last-img {
+  position: absolute;
+  bottom: 210px;
+  width: 160px;
+  left: 50px;
+  display: flex;
+}
+
 @media screen and (min-width: 1024px) {
   .hotel__double-room {
     .container {
@@ -77,6 +85,12 @@
     top: -32px;
     right: 112px;
   }
+
+  .hotel__last-img {
+    bottom: 30px;
+    width: 230px;
+    left: 150px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -108,5 +122,11 @@
 
   .hotel-img {
     right: 180px;
+  }
+
+  .hotel__last-img {
+    bottom: 30px;
+    width: 280px;
+    left: 180px;
   }
 }
