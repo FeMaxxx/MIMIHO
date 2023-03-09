@@ -1,9 +1,9 @@
-const swiperRight = document.querySelectorAll('[data-slider="swiper-left"]');
+const swiperLeft = document.querySelectorAll('[data-slider="swiper-left"]');
 
 let arrowPrev;
 let arrowNext;
 
-swiperRight.forEach(slider => {
+swiperLeft.forEach(slider => {
   arrowPrev = slider.querySelector(".swiper-button-left");
   arrowNext = slider.querySelector(".swiper-button-right");
 });

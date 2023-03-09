@@ -3,12 +3,12 @@
 .swiper-left {
   overflow: hidden;
   position: absolute;
-  width: 245px;
+  width: 220px;
   left: 15px;
   bottom: 20px;
 
   .swiper-slide {
-    height: 245px !important;
+    height: 220px !important;
     width: 100%;
 
     img {
@@ -54,17 +54,37 @@
   }
 }
 
+.swiper-hotel-left {
+  width: 190px;
+  bottom: 175px;
+
+  .swiper-slide {
+    height: 190px !important;
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1024px) {
-  .swiper-left {
-    width: calc(245 + 245 + 30);
+  .swiper-left,
+  .swiper-hotel-left {
+    width: calc(220 + 220 + 30);
     left: 60px;
-    bottom: 30px;
+    bottom: 40px;
+
+    .swiper-slide {
+      height: 220px !important;
+    }
   }
 }
 
 @media screen and (min-width: 1280px) {
   .swiper-left {
+    width: calc(245 + 245 + 30);
     left: 85px;
     bottom: 50px;
+
+    .swiper-slide {
+      height: 245px !important;
+    }
   }
 }
