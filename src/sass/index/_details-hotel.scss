@@ -185,6 +185,12 @@
     }
   }
 
+  .details-hotel__swiper-buttons-list {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+  }
+
   .swiper-button-left.swiper-button-disabled,
   .swiper-button-right.swiper-button-disabled {
     opacity: 0.35;

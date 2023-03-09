@@ -2,12 +2,12 @@ function swiperSlider() {
   const detailsRest = document.querySelectorAll('[data-slider="details-rest"]');
   if (detailsRest) {
     detailsRest.forEach(slider => {
-      let arrowPrev = slider.querySelector('.swiper-button-left');
-      let arrowNext = slider.querySelector('.swiper-button-right');
+      let arrowPrev = slider.querySelector(".swiper-button-left");
+      let arrowNext = slider.querySelector(".swiper-button-right");
 
-      const swiper = new Swiper(slider.querySelector('.swiper-details-rest'), {
+      const swiper = new Swiper(slider.querySelector(".swiper-details-rest"), {
         speed: 1500,
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 20,
 
         navigation: {
@@ -26,4 +26,5 @@ function swiperSlider() {
     });
   }
 }
-window.addEventListener('load', swiperSlider, false);
+
+window.addEventListener("load", swiperSlider, false);
