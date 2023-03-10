@@ -1,6 +1,109 @@
 <section class="hero room-hero">
   <div class="shadou"></div>
 
+  <div class="" data-slider="room-hero__slider">
+    <div class="swiper room-hero__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                /src/images/room/room_hero/room_hero_desk_1280_1x.jpg 1x,
+                /src/images/room/room_hero/room_hero_desk_1280_2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+
+            <source
+              srcset="
+                /src/images/room/room_hero/room_hero_tab_1024_1x.jpg 1x,
+                /src/images/room/room_hero/room_hero_tab_1024_2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+
+            <img
+              srcset="
+                /src/images/room/room_hero/room_hero_mob_414_1x.jpg 1x,
+                /src/images/room/room_hero/room_hero_mob_414_2x.jpg 2x
+              "
+              alt="foto hall"
+            />
+          </picture>
+        </div>
+
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                /src/images/slider__room-hiro/slider_room_desk_1_1280_1x.jpg 1x,
+                /src/images/slider__room-hiro/slider_room_desk_1_1280_2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+
+            <source
+              srcset="
+                /src/images/slider__room-hiro/slider_room_tab_1_1024_1x.jpg 1x,
+                /src/images/slider__room-hiro/slider_room_tab_1_1024_2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+
+            <img
+              srcset="
+                /src/images/slider__room-hiro/slider_room_mob_1_414_1x.jpg 1x,
+                /src/images/slider__room-hiro/slider_room_mob_1_414_2x.jpg 2x
+              "
+              alt="foto hall"
+            />
+          </picture>
+        </div>
+
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                /src/images/slider__room-hiro/slider_room_desk_2_1280_1x.jpg 1x,
+                /src/images/slider__room-hiro/slider_room_desk_2_1280_2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+            />
+
+            <source
+              srcset="
+                /src/images/slider__room-hiro/slider_room_tab_2_1024_1x.jpg 1x,
+                /src/images/slider__room-hiro/slider_room_tab_2_1024_2x.jpg 2x
+              "
+              media="(min-width: 1024px)"
+            />
+
+            <img
+              srcset="
+                /src/images/slider__room-hiro/slider_room_mob_2_414_1x.jpg 1x,
+                /src/images/slider__room-hiro/slider_room_mob_2_414_2x.jpg 2x
+              "
+              alt="foto hall"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
+
+    <ul class="room-hero__slider-buttons-list">
+      <button class="swiper-buttons swiper-button-left" type="button">
+        <svg class="room-hero__slider-button-icon" width="30" height="30">
+          <use href="./images/icons.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+      <button class="swiper-buttons swiper-button-right" type="button">
+        <svg class="room-hero__slider-button-icon" width="30" height="30">
+          <use href="./images/icons.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </ul>
+  </div>
+
   <div class="container">
     <a
       class="locations"

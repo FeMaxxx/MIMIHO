@@ -1,9 +1,14 @@
 .room-hero {
   text-align: start;
   position: relative;
+  width: 414px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 740px;
 
   .shadou {
     position: absolute;
+    z-index: 1;
     left: 0px;
     top: 0px;
     width: 414px;
@@ -53,6 +58,9 @@
 
 @media screen and (min-width: 1024px) {
   .room-hero {
+    width: 1024px;
+    height: 720px;
+
     .shadou {
       width: 1024px;
       height: 150px;
@@ -91,6 +99,8 @@
 
 @media screen and (min-width: 1280px) {
   .room-hero {
+    width: 1280px;
+
     .shadou {
       width: 1280px;
       height: 150px;
