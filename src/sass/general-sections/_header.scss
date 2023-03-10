@@ -1,3 +1,9 @@
+@media screen and (max-width: 360px) {
+  .header__nav-tel-link {
+    display: none;
+  }
+}
+
 .header {
   width: 100%;
   position: absolute;

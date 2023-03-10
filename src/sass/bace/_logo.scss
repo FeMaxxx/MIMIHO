@@ -3,12 +3,14 @@
   font-size: 36px;
   line-height: 1.08;
   letter-spacing: 0.3em;
+  width: 115px;
 
   text-transform: uppercase;
   color: var(--text-color-white);
 }
 
 .hero-logo {
+  letter-spacing: 2;
   width: 303px;
   margin-left: auto;
   margin-right: auto;
@@ -16,8 +18,6 @@
   font-family: var(--logo-font);
   font-size: 96px;
   line-height: 1.07;
-  letter-spacing: 0.3em;
-
   text-transform: uppercase;
   color: var(--text-color-white);
 }
@@ -42,6 +42,12 @@
 
   text-transform: uppercase;
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 360px) {
+  .hero-logo {
+    letter-spacing: 0.3em;
+  }
 }
 
 @media screen and (min-width: 1024px) {
