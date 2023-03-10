@@ -34,6 +34,13 @@
 
 .header__nav-tel-link {
   height: 24px;
+
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-transparent);
+  }
 }
 
 .header__nav-tel-icon {
@@ -97,9 +104,16 @@
 
   .header__social-item {
     height: 24px;
+
+    &:hover .header__social-icon,
+    &:focus .header__social-icon {
+      fill: var(--accent-color);
+    }
   }
 
   .header__social-icon {
+    transition: fill var(--animation);
+
     fill: rgba(243, 198, 83, 0.7);
   }
 }

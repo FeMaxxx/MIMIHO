@@ -23,6 +23,7 @@
 }
 
 .footer__nav {
+  width: 110px;
   margin-bottom: 32px;
 }
 
@@ -72,6 +73,15 @@
     margin-right: 137px;
   }
 
+  .footer__nav-link {
+    transition: letter-spacing var(--animation);
+
+    &:hover,
+    &:focus {
+      letter-spacing: 0.06em;
+    }
+  }
+
   .footer__social-list {
     flex-direction: column;
   }
@@ -88,6 +98,13 @@
 
     border: 0.5px solid var(--accent-color);
     border-radius: 2px;
+
+    transition: background-color var(--animation);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color-transparent);
+    }
   }
 
   .footer__social-name {

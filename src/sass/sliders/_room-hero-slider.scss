@@ -47,7 +47,7 @@
     transition: background-color var(--animation), border-color var(--animation);
 
     &:hover {
-      background-color: rgba(233, 205, 0, 0.1);
+      background-color: var(--accent-color-transparent);
       border-color: var(--accent-color);
     }
 

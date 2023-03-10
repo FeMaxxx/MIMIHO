@@ -10,6 +10,13 @@
   height: 47px;
   border: 1px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-transparent);
+  }
 }
 
 .location-icon {
